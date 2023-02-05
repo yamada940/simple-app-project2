@@ -7,6 +7,7 @@
     <title>Vite App</title>
   </head>
   <body>
+
     <header class="header">
       <nav class="nav" id="js-nav">
         <a data-page="index" href="./index.html">TOP</a>
@@ -15,9 +16,18 @@
       </nav>
     </header>
 
-    <p>Hello World</p>
+    <div class="container">
+      <form class="form" id="js-firebase-form" action="/" method="post">
+        <p>First: <input name="first" type="text" value=""></p>
+        <p>Last: <input name="last" type="text" value=""></p>
+        <p>Born: <input name="born" type="text" value=""></p>
 
+        <div>
+          <button type="submit">Add Data</button>
+        </div>
+      </form>
+    </div>
 
-    <script type="module" src="./assets/scripts/main.js"></script>
+    <script type="module" src="/assets/scripts/main.js"></script>
   </body>
 </html>

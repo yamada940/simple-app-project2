@@ -5,6 +5,8 @@ import '@splidejs/splide/css/skyblue';
 import Splide from '@splidejs/splide';
 import ActiveNav from './modules/activeNav';
 import FirebaseTable from './modules/FirebaseTable';
+import FirebaseForm from './modules/FirebaseForm';
+
 
 if(document.getElementById('js-nav') !== null) {
     new ActiveNav({
@@ -14,6 +16,13 @@ if(document.getElementById('js-nav') !== null) {
 
 if(document.getElementsByClassName('splide')[0]){
 	new Splide( '.splide' ).mount();
+}
+
+if(document.getElementById('js-firebase-form') !== null) {
+    new FirebaseForm({
+        dbName: 'users',
+        formId: 'js-firebase-form'
+    });
 }
 
 if(document.getElementById('js-firebase-table') !== null) {
