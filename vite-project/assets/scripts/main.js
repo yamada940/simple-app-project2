@@ -28,7 +28,7 @@ if(document.getElementById('js-firebase-form') !== null) {
 if(document.getElementById('js-firebase-table') !== null) {
     const firebaseTable = new FirebaseTable({
         dbName: 'users',
-        tableID: 'js-firebase-table'
+        tableId: 'js-firebase-table'
     });
     firebaseTable.showData();
 }
