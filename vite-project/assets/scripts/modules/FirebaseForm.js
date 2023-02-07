@@ -1,4 +1,4 @@
-import * as firebase from "firebase/app";
+import firebase from "firebase/compat/app";
 import { getFirestore, collection, addDoc } from "firebase/firestore";
 import { firebaseConfig } from "./const";
 
@@ -6,6 +6,7 @@ export default class FirebaseForm {
     constructor(obj) {
         // firebaseを初期化し、firebaseAppにプロジェクト情報を格納する
         const firebaseApp = firebase.initializeApp(firebaseConfig);
+        // 接続情報を変数dbに格納
         this.db = getFirestore(firebaseApp);
 
         this.dbName = obj.dbName;
