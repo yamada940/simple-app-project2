@@ -14,7 +14,7 @@ export default class FirebaseTable {
     }
 
     async showData() {
-        // 複数ドキュメントへの参照を取得し、「q」に格納する
+        // 複数ドキュメントを参照し、「q」に格納する
         const q = query(collection(this.db, this.dbName));
         // 条件に合ったドキュメントを「querySnapshot」に格納する
         const querySnapshot = await getDocs(q);
