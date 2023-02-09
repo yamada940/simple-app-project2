@@ -1,4 +1,4 @@
-import * as firebase from "firebase/app";
+import firebase from "firebase/compat/app";
 import { getFirestore, collection, query, getDocs } from "firebase/firestore";
 import { firebaseConfig } from "./const";
 
